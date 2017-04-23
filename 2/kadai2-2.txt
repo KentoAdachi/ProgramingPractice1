@@ -1,0 +1,31 @@
+Number of strings : 6
+Input strings : apple
+apple
+Input strings : pen
+pen
+Input strings : pineapple
+pineapple
+Input strings : pen
+pen
+Input strings : uh
+uh
+Input strings : penpineappleapplepen
+penpineappleapplepen
+
+Before sorting
+6
+apple
+pen
+pineapple
+pen
+uh
+penpineappleapplepen
+
+After sorting
+6
+uh
+pen
+pen
+apple
+pineapple
+penpineappleapplepen
