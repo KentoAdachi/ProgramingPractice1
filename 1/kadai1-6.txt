@@ -1,0 +1,18 @@
+input name[0] : aiba
+input name[1] : matsuura
+input name[2] : miyoshi
+input name[3] : takahashi
+input name[4] : suzuki
+input key : miyoshi
+miyoshi is in name[2]
+input key : aiba
+aiba is in name[0]
+input key : wakaki
+wakaki is not found
+input key : quit
+quit
+name[0] = aiba
+name[1] = matsuura
+name[2] = miyoshi
+name[3] = takahashi
+name[4] = suzuki
