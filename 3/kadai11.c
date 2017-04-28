@@ -9,36 +9,38 @@
  */
 
 #include <stdio.h>
-#include <ctype.h>
-#define filename "data.txt"
+#include <ctype.h>//isdigit()
+#define filename "input_0311.txt"
 
-int strread(FILE *fp){
+//ファイルを読み和を計算する関数
+int strreadsum(FILE *fp){
     /*
-     read a word from file
-     arg1 :FILE *fp, file pointer
+     return : int total : total sum
+     arg1 : FILE *fp :file pointer
      */
     int c;
-    int return_value;
+    //..1
+    int total = 0;
     //..2
     while ((c = fgetc(fp)) != EOF) {
         //..3
-        if (c == (int)' ') {
-            ungetc(c, fp);//..4
+        if (c != (int)' ') {
+            //..4
+            ungetc(c, fp);
+            //..5
             if (isdigit(c)) {
                 fscanf(fp, "%d",&c);
-                return_value += c;
-                printf("%d is digit",c);
+                total += c;
+                printf("%d is digit\n",c);
             }else{
                 char s[100];
                 fscanf(fp, "%s",s);
-                printf("%s is word",s);
+                printf("%s is word\n",s);
             }
         }
     }
-    return return_value;
+    return total;
 }
-
-
 
 
 int main(){
@@ -47,8 +49,9 @@ int main(){
         printf("error : cannot open "filename"\n");
         return 1;
     }
-
-    printf("%d",strread(fp));
+    //..7
+    printf("total sum = %d\n",strreadsum(fp));
+    
     
     return 0;
 }
