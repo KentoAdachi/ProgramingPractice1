@@ -11,7 +11,47 @@
 #include <stdio.h>
 #define filename "output_0307.txt"
 int main(){
+    
+    FILE *fp;
+    int data[10];
+    //import file
+    if ((fp = fopen(filename, "r")) == NULL) {
+        printf("error : cannot open "filename"\n");
+        return 1;
+    }
+    //read
+    for (int i = 0; i < 10; i++) {
+        fscanf(fp, "%d",&data[i]);
+    }
+    //show
+    
+    for (int i = 0; i < 10; i++) {
+        printf("%d ",data[i]);
+    }
+    printf("\n");
+    
+    //sort
+    
+    for (int j = 0;j < 9; j++) {
+        //右端を外してループ継続
+        for (int i = 0; i < 9 - j; i++) {
+            if (data[i]> data[i + 1]) {
+                int tmp;
+                tmp = data[i];
+                data[i] = data[i+1];
+                data[i+1] = tmp;
+            }
+        }
+        
+    }
+    //show
+    
+    for (int i = 0; i < 10; i++) {
+        printf("%d ",data[i]);
+    }
+    printf("\n");
 
-    printf("Helloworld\n");
+    
+    
 
 }
