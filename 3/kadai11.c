@@ -12,16 +12,19 @@
 #include <ctype.h>//isdigit()
 #define filename "input_0311.txt"
 
-//ファイルを読み和を計算する関数
 int strreadsum(FILE *fp){
     /*
-     return : int total : total sum
-     arg1 : FILE *fp :file pointer
+     ファイルを読み和を計算する関数
+     return : int total,整数の合計値
+     arg1 : FILE *fp, 読み取り先
+     var : int c, ファイルから読み取った文字を一時的に格納
+     var : char s[100],ファイルから読み取った文字列を一時的に格納
+     output : cが整数か単語か
      */
     int c;
     //..1
     int total = 0;
-    //..2
+    //..2 (..6)
     while ((c = fgetc(fp)) != EOF) {
         //..3
         if (c != (int)' ') {
@@ -45,6 +48,8 @@ int strreadsum(FILE *fp){
 
 int main(){
     FILE *fp;
+    
+    //ファイルを開く
     if ((fp = fopen(filename, "r")) == NULL) {
         printf("error : cannot open "filename"\n");
         return 1;
@@ -53,5 +58,6 @@ int main(){
     printf("total sum = %d\n",strreadsum(fp));
     
     
+    fclose(fp);
     return 0;
 }

@@ -1,0 +1,9 @@
+book is word
+63 is digit
+5 is digit
+car is word
+10 is digit
+pop is word
+stack is word
+3 is digit
+total sum = 81
