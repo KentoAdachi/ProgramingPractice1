@@ -4,7 +4,7 @@
  作成年月日 :2017/4/26
  学籍番号 :BP16001
  氏名 :足立 賢人
- 
+
  動作環境 :xcode8.1(MacOS Sierra 10.12.4)
  */
 
@@ -21,7 +21,7 @@ int strreadsum(FILE *fp){
      var : char s[100],ファイルから読み取った文字列を一時的に格納
      output : cが整数か単語か
      */
-    int c;
+    char c;
     //..1
     int total = 0;
     //..2 (..6)
@@ -32,9 +32,10 @@ int strreadsum(FILE *fp){
             ungetc(c, fp);
             //..5
             if (isdigit(c)) {
-                fscanf(fp, "%d",&c);
-                total += c;
-                printf("%d is digit\n",c);
+                int i;
+                fscanf(fp, "%d",&i);
+                total += i;
+                printf("%d is digit\n",i);
             }else{
                 char s[100];
                 fscanf(fp, "%s",s);
@@ -48,7 +49,7 @@ int strreadsum(FILE *fp){
 
 int main(){
     FILE *fp;
-    
+
     //ファイルを開く
     if ((fp = fopen(filename, "r")) == NULL) {
         printf("error : cannot open "filename"\n");
@@ -56,8 +57,8 @@ int main(){
     }
     //..7
     printf("total sum = %d\n",strreadsum(fp));
-    
-    
+
+
     fclose(fp);
     return 0;
 }
