@@ -1,0 +1,10 @@
+Data file : 04data1.csv
+
+average score = 75.115702
+    max score = 99
+
+      S grade = 19
+      A grade = 43
+      B grade = 31
+      C grade = 12
+      D grade = 15
