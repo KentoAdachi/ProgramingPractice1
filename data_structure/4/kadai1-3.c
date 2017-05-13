@@ -1,3 +1,12 @@
+/*
+ データ構造とアルゴリズム
+ 課題番号 :課題1-3
+ 作成年月日 :2017/4/28
+ 学籍番号 :BP16001
+ 氏名 :足立 賢人
+
+ 動作環境 :xcode8.1(MacOS Sierra 10.12.4)
+ */
 #include <stdio.h>
 #include <stdlib.h>//malloc
 #define FILE_NAME "04data1.csv"
