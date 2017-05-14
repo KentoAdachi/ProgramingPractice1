@@ -1,3 +1,12 @@
+/*
+ 課題番号 :課題4
+ 問題番号 :問題4
+ 作成年月日 :2017/5/14
+ 学籍番号 :BP16001
+ 氏名 :足立 賢人
+ 
+ 動作環境 :xcode8.1(MacOS Sierra 10.12.4)
+ */
 #include<stdio.h>
 
 struct SCORE_DATA {
