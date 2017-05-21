@@ -1,0 +1,15 @@
+Listhead -> 90 -> 97 -> 87 -> 81 -> 92 -> 81 -> 76 -> 80 -> 97 -> 78
+
+delete position(exit key = -1) : 0
+Listhead -> 97 -> 87 -> 81 -> 92 -> 81 -> 76 -> 80 -> 97 -> 78
+
+delete position(exit key = -1) : 1
+Listhead -> 97 -> 81 -> 92 -> 81 -> 76 -> 80 -> 97 -> 78
+
+delete position(exit key = -1) : 2
+Listhead -> 97 -> 81 -> 81 -> 76 -> 80 -> 97 -> 78
+
+delete position(exit key = -1) : 100
+Listhead -> 97 -> 81 -> 81 -> 76 -> 80 -> 97 -> 78
+
+delete position(exit key = -1) : -1

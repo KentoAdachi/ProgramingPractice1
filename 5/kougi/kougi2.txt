@@ -1,0 +1,11 @@
+Listhead -> 90 -> 97 -> 87 -> 81 -> 92 -> 81 -> 76 -> 80 -> 97 -> 78
+
+insert position(exit key = -1) : 1
+score : 50
+Listhead -> 90 -> 50 -> 97 -> 87 -> 81 -> 92 -> 81 -> 76 -> 80 -> 97 -> 78
+
+insert position(exit key = -1) : 0
+score : 60
+Listhead -> 60 -> 90 -> 50 -> 97 -> 87 -> 81 -> 92 -> 81 -> 76 -> 80 -> 97 -> 78
+
+insert position(exit key = -1) : -1
