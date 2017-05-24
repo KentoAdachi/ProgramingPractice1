@@ -1,0 +1,11 @@
+名前とスコアを入力 : lambda 11
+do you want to quit?(y/n)
+n
+名前とスコアを入力 : nu 13
+do you want to quit?(y/n)
+n
+名前とスコアを入力 : mu 12
+do you want to quit?(y/n)
+y
+最高点 : 13点(nuさん)
+最低点 : 11点(lambdaさん)
