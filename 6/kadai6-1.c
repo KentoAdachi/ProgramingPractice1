@@ -5,7 +5,7 @@
  学籍番号 : BP16001
  氏名 : 足立賢人
  動作環境 : Xcode8.2.1 - MacOS Sierra
- 
+
  */
 
 #include <stdio.h>
@@ -70,8 +70,7 @@ void print_stack(){
 
 
 int main (){
-
-
+printf("hey\n");
     while (1) {
         char in[256];
         printf("モードを入力 :\n");
