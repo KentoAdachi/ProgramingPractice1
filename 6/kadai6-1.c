@@ -5,7 +5,7 @@
  学籍番号 : BP16001
  氏名 : 足立賢人
  動作環境 : Xcode8.2.1 - MacOS Sierra
- test
+ 
  */
 
 #include <stdio.h>
