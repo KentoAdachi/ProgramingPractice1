@@ -70,7 +70,7 @@ void print_stack(){
 
 
 int main (){
-printf("hey\n");
+
     while (1) {
         char in[256];
         printf("モードを入力 :\n");
@@ -80,11 +80,14 @@ printf("hey\n");
             free_stack();
             break;
         }else if (strcmp(in, "pop") == 0) {
-
             printf("%c\n",pop());
-        }else{
+            print_stack();
+        }else if (strlen(in) == 1){
             push(in[0]);
+            print_stack();
+        } else{
 
+          printf("不正な入力です\n");
         }
 
     }
