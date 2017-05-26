@@ -5,7 +5,7 @@
  学籍番号 : BP16001
  氏名 : 足立賢人
  動作環境 : Xcode8.2.1 - MacOS Sierra
- 
+ test
  */
 
 #include <stdio.h>
@@ -34,7 +34,7 @@ void push(char c){
     data->c = c;
     data->next = stack;
     stack = data;
-    
+
 }
 
 char pop(){
@@ -53,7 +53,7 @@ void free_stack(){
         Cell *q = NULL;
         for (Cell *p = stack; p != NULL;) {
             q = p;
-            
+
             p = p->next;
             free(q);
         }
@@ -61,7 +61,7 @@ void free_stack(){
 }
 
 void print_stack(){
-    
+
     for (Cell *p = stack; p != NULL; p = p->next) {
         printf("%c",p->c);
     }
@@ -70,44 +70,24 @@ void print_stack(){
 
 
 int main (){
-    
-    
+
+
     while (1) {
         char in[256];
         printf("モードを入力 :\n");
         scanf("%s",in);
-        
+
         if (strcmp(in, "end") == 0) {
             free_stack();
             break;
         }else if (strcmp(in, "pop") == 0) {
-        
+
             printf("%c\n",pop());
         }else{
             push(in[0]);
-            
+
         }
-        
+
     }
-    
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
