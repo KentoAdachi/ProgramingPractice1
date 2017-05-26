@@ -12,12 +12,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+//..i
 typedef struct cell {
     char c;
     struct cell *next;
 } Cell;
 
-Cell *stack;
+Cell *stack;//..ii
 
 
 int malloc_s(Cell **p){
@@ -28,6 +29,7 @@ int malloc_s(Cell **p){
     return 0;
 }
 
+//..iii
 void push(char c){
     Cell *data;
     malloc_s(&data);
@@ -37,6 +39,7 @@ void push(char c){
 
 }
 
+//..iv
 char pop(){
     if (stack == NULL) {
         exit(EOF);
@@ -48,6 +51,7 @@ char pop(){
     return c;
 }
 
+//..v
 void free_stack(){
     if (stack != NULL) {
         Cell *q = NULL;
@@ -56,6 +60,7 @@ void free_stack(){
 
             p = p->next;
             free(q);
+            printf("スタックを解放しました\n");
         }
     }
 }
@@ -63,7 +68,7 @@ void free_stack(){
 void print_stack(){
 
     for (Cell *p = stack; p != NULL; p = p->next) {
-        printf("%c",p->c);
+        printf("->%c",p->c);
     }
     printf("\n");
 }
@@ -88,6 +93,7 @@ int main (){
         } else{
 
           printf("不正な入力です\n");
+          
         }
 
     }
