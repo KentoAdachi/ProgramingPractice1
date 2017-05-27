@@ -42,7 +42,8 @@ void push(char c){
 //編集禁止
 char pop(){
   if (stack == NULL) {
-    exit(EOF);
+    printf("プログラムを終了します\n");
+    exit(0);
   }
   char c = stack->c;
   Cell *p = stack;

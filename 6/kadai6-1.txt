@@ -1,0 +1,28 @@
+[MyBookAir:~/pro1/6] kent% gcc kadai6-1.c
+[MyBookAir:~/pro1/6] kent% ./a.out
+pushする文字かpop/endを入力してください : a
+->a
+pushする文字かpop/endを入力してください : b
+->b->a
+pushする文字かpop/endを入力してください : end
+スタックを解放しました
+[MyBookAir:~/pro1/6] kent% ./a.out
+pushする文字かpop/endを入力してください : c
+->c
+pushする文字かpop/endを入力してください : d
+->d->c
+pushする文字かpop/endを入力してください : pop
+d
+->c
+pushする文字かpop/endを入力してください : pop
+c
+stack is empty
+pushする文字かpop/endを入力してください : pop
+プログラムを終了します
+[MyBookAir:~/pro1/6] kent% ./a.out
+pushする文字かpop/endを入力してください : e
+->e
+pushする文字かpop/endを入力してください : pp
+不正な入力です
+スタックを解放しました
+プログラムを終了します

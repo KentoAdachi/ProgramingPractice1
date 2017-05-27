@@ -42,7 +42,8 @@ void push(char c){
 //..iv
 char pop(){
   if (stack == NULL) {
-    exit(EOF);
+    printf("プログラムを終了します\n");
+    exit(0);
   }
   char c = stack->c;
   Cell *p = stack;
@@ -82,7 +83,7 @@ int main (){
 
   while (1) {
     char in[256];
-    printf("モードを入力 :\n");
+    printf("pushする文字かpop/endを入力してください : ");
     scanf("%s",in);
 
     if (strcmp(in, "end") == 0) {
@@ -97,6 +98,7 @@ int main (){
     } else{
       printf("不正な入力です\n");
       free_stack();
+      printf("プログラムを終了します\n");
       break;
     }
 
