@@ -60,14 +60,15 @@ void free_stack(){
 
       p = p->next;
       free(q);
-      printf("スタックを解放しました\n");
+
     }
+    printf("スタックを解放しました\n");
   }
 }
 
 void print_stack(){
   if (stack == NULL) {
-    printf("stack is empty\n", );
+    printf("stack is empty\n");
   }else{
     for (Cell *p = stack; p != NULL; p = p->next) {
       printf("->%c",p->c);
