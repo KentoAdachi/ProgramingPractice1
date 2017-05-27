@@ -29,7 +29,7 @@ int malloc_s(Cell **p){
   return 0;
 }
 
-//..iii
+//編集禁止
 void push(char c){
   Cell *data;
   malloc_s(&data);
@@ -39,7 +39,7 @@ void push(char c){
 
 }
 
-//..iv
+//編集禁止
 char pop(){
   if (stack == NULL) {
     exit(EOF);
@@ -71,7 +71,7 @@ void print_stack(){
     printf("stack is empty\n");
   }else{
     for (Cell *p = stack; p != NULL; p = p->next) {
-      printf("->%c",p->c);
+      printf("%c",p->c);
     }
     printf("\n");
   }
@@ -84,10 +84,20 @@ int main (){
     char in[256];
 
     printf("文字列かendを入力してください : ");
-    for (int i = 0;in[i] != '\0';i++) {
-      push(in[i]);
-
+    scanf("%s",in);
+    printf("%s",in);
+    if (strcmp(in,"end") == 0) {
+      free_stack();
+      break;
     }
+    int i;
+    for (i = 0;in[i] != '\0';i++) {
+      push(in[i]);
+    }
+    for (;i > 0;i--) {
+      printf("%c",pop());
+    }
+    printf("\n");
 
   }
 
