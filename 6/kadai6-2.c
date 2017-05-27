@@ -85,11 +85,13 @@ int main (){
 
     printf("文字列かendを入力してください : ");
     scanf("%s",in);
-    printf("%s",in);
+
     if (strcmp(in,"end") == 0) {
+      printf("プログラムを終了します\n");
       free_stack();
-      break;
+      exit(0);
     }
+    printf("%s",in);
     int i;
     for (i = 0;in[i] != '\0';i++) {
       push(in[i]);
