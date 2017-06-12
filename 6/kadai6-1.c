@@ -6,6 +6,7 @@
 氏名 : 足立賢人
 動作環境 : Xcode8.2.1 - MacOS Sierra
 
+ //リスト構造を使ったスタックの作成
 */
 
 #include <stdio.h>
