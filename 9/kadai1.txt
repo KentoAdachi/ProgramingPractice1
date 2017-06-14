@@ -1,0 +1,5 @@
+% ./traverse
+prefix notation ===> * + a b - c / d e
+infix notation ====> a + b * c - d / e
+postfix notation ==> a b + c d e / - *
+***** END OF TRAVERSAL *****
