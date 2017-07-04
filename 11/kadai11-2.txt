@@ -1,0 +1,17 @@
+英単語を入力してください : dog
+dogの意味 : 犬
+続けますか?(yes/no)
+yes
+英単語を入力してください : cat
+catの意味 : 猫
+続けますか?(yes/no)
+yeah
+英単語を入力してください : penguin
+penguinの意味 : ペンギン
+続けますか?(yes/no)
+ofcourse
+英単語を入力してください : apple
+appleは登録されていません
+続けますか?(yes/no)
+no
+プログラムを終了します
