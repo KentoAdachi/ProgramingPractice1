@@ -24,7 +24,7 @@ NODE *root;
 
 //prototype
 void insert(NODE **p,int dat);
-void show();
+
 
 
 
@@ -72,8 +72,7 @@ void showTreeByPostorder(NODE *node){
 }
 
 
-void show(){
-}
+
 
 int main(){
     
