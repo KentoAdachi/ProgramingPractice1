@@ -6,8 +6,8 @@
  学籍番号 : BP16001
  氏名 : 足立賢人
  動作環境 : Xcode8.2.1 - MacOS Sierra
- 
- 
+
+
  課題概要 : バイナリツリーへの挿入
  */
 
@@ -40,7 +40,7 @@ void insert(NODE **p,int dat){
         }else{
             insert(&(*p)->right, dat);
         }
-    
+
     }
 
 }
@@ -75,7 +75,7 @@ void showTreeByPostorder(NODE *node){
 
 
 int main(){
-    
+
     while (1) {
         printf("inset data (-1 to quit): ");
         int dat;
